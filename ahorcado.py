@@ -25,8 +25,7 @@ while True:
 
     if user in select:
         answer.append(user)
-        for i in answer:
-            print(answer)
+        print(answer)
     else:
         print('Error')
 
