@@ -2,15 +2,13 @@ import random
 
 
 def pasw_random(num):
-    chars = 'abcdefghijkmlnopqrstuvwxyz'
-    numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
     password = str()
 
     while len(password) < num:
-        letra = random.choice(chars)
-        numero = random.choice(numbers)
-        password += letra
-        password += str(numero)
+        chars = random.choice('abcdefghijkmlnopqrstuvwxyz')
+        numbers = random.choice([1, 2, 3, 4, 5, 6, 7, 8, 9])
+        password += chars
+        password += str(numbers)
 
     print(password)
 
